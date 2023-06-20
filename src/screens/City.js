@@ -5,7 +5,7 @@ import {
   ImageBackground,
   View,
 } from "react-native";
-import IconText from "./IconText";
+import IconText from "../components/IconText";
 
 const City = () => {
   const {
