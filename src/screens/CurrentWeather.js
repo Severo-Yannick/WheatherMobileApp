@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import RowText from "../components/RowText";
-
+import { weatherType } from "../utilities/weatherType";
+// Example of API response => https://openweathermap.org/weather-conditions
 const CurrentWeather = () => {
   const {
     wrapper,
@@ -31,7 +32,7 @@ const CurrentWeather = () => {
       </View>
       <RowText
         messageOne={"Its sunny"}
-        messageTwo={"Its perfect t-shirt weather"}
+        messageTwo={weatherType.Thunderstorm.message}
         containerStyles={bodyWrapper}
         messageOneStyles={description}
         messageTwoStyles={message}
