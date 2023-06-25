@@ -2,9 +2,10 @@ import { View, Text, StyleSheet } from 'react-native'
 import { Feather } from "@expo/vector-icons";
 
 const ErrorItem = () => {
+  const { container, errorMessage } = styles
   return (
-    <View style={styles.container}>
-      <Text style={styles.errorMessage}>Sorry something went wrong</Text>
+    <View style={container}>
+      <Text style={errorMessage}>Sorry something went wrong</Text>
       <Feather name={'frown'} size={100} color={'white'} />
     </View>
   )
