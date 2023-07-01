@@ -1,4 +1,20 @@
-export const weatherType = {
+export interface WeatherInfo {
+  icon: string;
+  message: string;
+  backgroundColor: string;
+}
+
+export type WeatherName =
+  | "Thunderstorm"
+  | "Drizzle"
+  | "Rain"
+  | "Snow"
+  | "Clear"
+  | "Clouds"
+  | "Haze"
+  | "Mist";
+
+export const weatherType: Record<WeatherName, WeatherInfo> = {
   Thunderstorm: {
     icon: "zap",
     message: "It could get noisy",
